@@ -1,0 +1,343 @@
+﻿<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<!--<script type="text/javascript" src="/sites/intranet/_catalogs/masterpage/TracFoneMaster/SearchBox.js"></script>-->
+
+
+<script type="text/javascript">
+ function openURL(link)
+  {
+  var isChrome = !!window.chrome && !!window.chrome.webstore;
+	if (isChrome)
+	{
+		window.open(link);
+	}
+	else
+	{
+  //alert(link);
+  	var isFirefox = typeof InstallTrigger !== 'undefined';
+  	var isSafari = /constructor/i.test(window.HTMLElement) || (function (p) { return p.toString() === "[object SafariRemoteNotification]"; })(!window['safari'] || safari.pushNotification);
+  	var isOpera = (!!window.opr && !!opr.addons) || !!window.opera || navigator.userAgent.indexOf(' OPR/') >= 0;
+  	var isEdge = !isIE && !!window.StyleMedia;
+	var isIE = /*@cc_on!@*/false || !!document.documentMode;
+	var isBlink = (isChrome || isOpera) && !!window.CSS;
+  	if(isFirefox || isSafari || isOpera || isEdge || isIE || isBlink )
+  	{
+  	try
+  	{
+  	var shell = new ActiveXObject("WScript.Shell");
+	var url ="Chrome "+ link;
+	shell.run(url);
+	}
+	catch(err)
+	{
+	window.open(link);
+	}
+	}
+	else
+	{
+	var shell = new ActiveXObject("WScript.Shell");
+	var url = link;
+	shell.run(url);
+
+	}
+	
+	}
+  }
+</script>
+<title></title></head>
+<body>
+<div class="container fullBand">
+        <div class="container">
+            <div class="col-md-8 col-sm-8  col-xs-6">
+                       </div>
+            <div class="col-md-4 col-sm-4 col-xs-6  ">
+                <!--<ul class="nav navbar-nav navbar-right">
+                    <li class="nav navbar-nav navbar-right user-header" id="login">
+                        <a class="login-link" href="#">
+                            <img src="/sites/intranet/_catalogs/masterpage/TracFoneMaster/avatar.svg" class="user-image" alt="User Image">
+                            <p></p>
+                        </a>
+                    </li>
+                </ul>-->
+            </div>
+        </div>
+    </div>
+    <!--login-->
+                         <li class="nav navbar-nav navbar-right user-header" id="login">
+                        <a class="login-link">
+                        <img src="/sites/intranet/_catalogs/masterpage/TracFoneMaster/avatar.svg" class="user-image" alt="User Image" id="login-user-img">
+                        <p id="login-user-name"></p>
+                        </a>
+                  		</li>
+              
+        <!--login end-->
+    <nav class="navbar tracmenu ">
+        <div class="container container-fixed no-padding">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="/sites/intranet/Pages/Home.aspx" target="_blank"><img width="120" src="/sites/intranet/_catalogs/masterpage/TracFoneMaster/logo.png"></a>
+            </div>
+            <div id="navbar" class="navbar-collapse collapse ">
+                <ul class="nav navbar-nav main-nav-trac">
+
+                    <li class="dropdown">
+                        <a class="dropdown-toggle main-nav-trac-a" data-toggle="dropdown" href="#">Useful Links </a>
+                        <ul class="dropdown-content" id="CustomOpen">
+                        		<!--<li><a href="/sites/intranet/Pages/ReportFindings.aspx" target="_blank">Report Findings</a></li> -->
+								<li><a href="http://aramarkcafe.com/layouts/canary_2015/locationhome.aspx?locationid=3097" target="_blank">Aramark Cafe Menu</a></li>
+								<li><a href="http://dpvmcognos01/ibmcognos/cgi-bin/cognosisapi.dll?b_action=xts.run&m=portal/cc.xts&gohome=" target="_blank">Business Intelligence (BI)</a></li>
+								<li><a href="https://tracfone-wireless.silkroad.com/epostings/index.cfm?version=1&company_id=16179" target="_blank">Careers</a></li>
+								<li><a href="https://dpvmcltyapp.tracfone.com/niku/nu#action:homeActionId" target="_blank">Clarity</a></li>
+								<li><a href="#" onclick="openURL('https://www.concursolutions.com/')">Concur Expense Reporting Tool</a></li>
+								<li><a href="http://dpvmjira:8090/" target="_blank">confluence </a></li>
+								<li><a href="https://dpvmcpaa/" target="_blank">Dynamic Policy</a></li>
+								<li><a href="https://login.gbtconnect.com/login/apps/init.do?_appid=Login&cookieDomain=.gbtconnect.com&relayMethod=GET&relayState=https%3A%2F%2Ftracfonetravel.gbtconnect.com%2Frc%2Flogin%2FpostLogin.do&appType=pa&reason=usrPwdLogin&paSiteUrlName=tracfonetravel&smb=false" target="_blank">Global Business Travel</a></li>
+								<li><a href="https://workforcenow.adp.com/public/index.htm" target="_blank">Hr on Trac</a></li>
+								<li><a href="http://dpvmjira:8080/" target="_blank">Jira</a></li>
+								<li><a href="#" onclick="openURL('https://authgate.tracfone.com/adfs/ls/IdpInitiatedSignon.aspx')">Kronos</a></li>
+								<li><a href="https://tfmain.tracfone.com/sites/humanresources/securityfacility/_layouts/15/start.aspx#/SitePages/Home.aspx" target="_blank">Maintenance request</a></li>
+								<li><a href="https://dpvmnoetixgprod.tracfone.wireless.ad/nwq/login.htm" target="_blank">NOETIX</a></li>
+								<li><a href="https://dpsecoimprod1.tracfone.com:14001/identity/faces/signin?_afrLoop=37396744683828952&_afrWindowMode=0&_adf.ctrl-state=2rht3neul_9" target="_blank">Oracle Identity Manager (OIM)</a></li>
+								<li><a href="http://ofsappsprd.tracfone.com:8007" target="_blank">Oracle(OFS)</a></li>
+								<li><a href="#" onclick="openURL('https://global.hgncloud.com/tracfone/welcome.jsp')">PDP/TracFone University Online</a></li>
+								<li><a href="https://sa.tracfone.com:8443/CAisd/pdmweb.exe" target="_blank">Service Desk</a></li>
+								
+                            <!--<li><a href="#" target="_self">Trade Shows</a></li>
+                            <li><a href="#" target="_self">Award Ceremony</a></li>-->
+                        </ul>
+
+                    </li>
+                     <li class="dropdown">
+                        <a class="dropdown-toggle main-nav-trac-a" data-toggle="dropdown" href="#">Brands</a>
+                        <ul class="dropdown-content">
+                            <!--<li><a href="/sites/intranet/Brands/GoSmart.aspx" target="_blank">GOSMART</a></li>
+                              <!--<li><a href="/sites/intranet/Brands/Net10Business.aspx" target="_blank">NET10 Business</a></li>
+                             <!--<li><a href="/sites/intranet/Brands/PagePlus.aspx" target="_blank">PagePlus</a></li>-->
+                             <!--<li><a href="/sites/intranet/Brands/SafeLink.aspx" target="_blank">SafeLink</a></li>-->
+                            <li><a href="/sites/intranet/Brands/SafeLink.aspx" target="_blank">SafeLink</a></li>
+							<li><a href="/sites/intranet/Brands/Simple_Mobile.aspx" target="_blank">Simple Mobile</a></li>
+							<li><a href="/sites/intranet/Brands/Straight_Talk.aspx" target="_blank">Straight Talk</a></li>
+							<li><a href="/sites/intranet/Brands/TotalWireless.aspx" target="_blank">Total Wireless</a></li>
+							<li><a href="/sites/intranet/Brands/Trac_Fone.aspx" target="_blank">TracFone</a></li>
+							<li><a href="/sites/intranet/Brands/WalmartFamilyMobile.aspx" target="_blank">WalMart Family Mobile</a></li> 
+							<li><a href="/sites/intranet/Brands/StrategicBrands.aspx" target="_blank">Complementary Brands</a></li>
+							                            </ul>
+
+                    </li>
+
+					<li class="dropdown">
+                        <a class="dropdown-toggle main-nav-trac-a" data-toggle="dropdown" href="#">Corporate Forms  </a>
+
+                        <ul class="dropdown-content">
+                            <li class="dropdown-submenu"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Accounting</a>
+                            	<ul class="dropdown-menu">
+									<li><a href="/sites/intranet/CORPORATE FORMS/2018 Financial Calendar.pdf" target="_blank">2018 Financial Calendar</a></li>
+									<li><a href="/sites/intranet/CORPORATE FORMS/CheckRequest 2018.xls" target="_blank">Check Request</a></li> 
+									<li><a href="/sites/intranet/CORPORATE FORMS/COST_CENTER_OWNERS 051618.xlsx" target="_blank">COST CENTER OWNERS</a></li>
+									<li><a href="/sites/intranet/CORPORATE FORMS/Direct_Deposit_Form.xls" target="_blank">Direct Deposit Form</a></li>
+									<li><a href="/sites/intranet/CORPORATE FORMS/Form W-9 (Rev. November 2017).pdf" target="_blank">W9 Form</a></li>
+									<li><a href="/sites/intranet/CORPORATE FORMS/Membership_Rewards_Non_Travel_Redemption_Form 06-06-2017.xlsx" target="_blank">Membership Rewards Non-Travel Redemption Form</a></li>
+									<li><a href="/sites/intranet/CORPORATE FORMS/fw4-2018.pdf" target="_blank">W4 Form 2018</a></li>
+								</ul>
+                            </li>
+                             <li class="dropdown-submenu"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Business Continuity</a>
+                            	<ul class="dropdown-menu">
+									<li><a href="/sites/intranet/CORPORATE FORMS/FEMA_Emergency_Financial_First_Aid_Kit_(EFFAK)_signed_04.09.18_508.pdf" target="_blank">FEMA Emergency Financial First Aid Kit</a></li>
+								</ul>
+                            </li>
+                            <li class="dropdown-submenu"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Call Center</a>
+                            	<ul class="dropdown-menu">
+									<li><a href="/sites/intranet/CORPORATE FORMS/Agent Support 04-2017.xls" target="_blank">Agent Support Request Form</a></li>
+									<li><a href="/sites/intranet/CORPORATE FORMS/Customer_Care_Equipment_List.doc" target="_blank">Customer care Equipment List</a></li>
+									<li><a href="/sites/intranet/CORPORATE FORMS/ERD-Services-Request-form.pdf" target="_blank">ERD Services Request Form</a></li>
+								</ul>
+                            </li>
+							<li class="dropdown-submenu"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Company store</a>
+                            	<ul class="dropdown-menu">
+									<li><a href="/sites/intranet/CORPORATE FORMS/Company Store Purchase Form 052518.xlsx" target="_blank">Company Store Purchase Form</a></li>
+								</ul>
+                            </li>
+                            <li class="dropdown-submenu"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Financial Assurance</a>
+                            	<ul class="dropdown-menu">
+									<li><a href="/sites/intranet/CORPORATE FORMS/Business Card Order 703 03-23-2018.doc" target="_blank">Business Card Order Form</a></li>
+									<li><a href="/sites/intranet/CORPORATE FORMS/Corporate function form 703 4-03-18.xls" target="_blank">Corporate Function Form</a></li>
+									<li><a href="/sites/intranet/CORPORATE FORMS/Marketing Purchasing Request 703 07-2017.xlsx" target="_blank">Marketing Purchasing Request</a></li>
+									<li><a href="/sites/intranet/CORPORATE FORMS/Purchase_Order_Requisition- 4.03.18.xls" target="_blank">Purchase Order Requisition</a></li>
+									<li><a href="/sites/intranet/CORPORATE FORMS/get_file.pdf" target="_blank">Purchasing Matrix</a></li>
+									<li><a href="/sites/intranet/CORPORATE FORMS/Vendor Maintenance Form 1 v2018.xls" target="_blank">Vendor Maintenance Form</a></li>
+									
+								</ul>
+                            </li>
+
+
+                            <li class="dropdown-submenu"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Human Resources</a>
+                            	<ul class="dropdown-menu">
+									<li><a href="/sites/intranet/CORPORATE FORMS/Deli To Go.pdf" target="_blank">Aramark Deli To Go Form </a></li>
+									<li><a href="/sites/intranet/CORPORATE FORMS/Content Course Development Request Form.pdf" target="_blank">Content/Course Development Request Form </a></li> 
+									<li><a href="/sites/intranet/CORPORATE FORMS/Damage Loss Incident Report.doc" target="_blank">Damage Loss Incident Report</a></li>
+									<li><a href="/sites/intranet/CORPORATE FORMS/EMPLOYEE REQUEST FOR ACCOMMODATION EE R.docx" target="_blank">Employee Request For Accommodations </a></li>
+									<li><a href="/sites/intranet/CORPORATE FORMS/External Training Request Form 2017.pdf" target="_blank">External Training Request Form </a></li>
+									<li><a href="/sites/intranet/CORPORATE FORMS/Incident Report E.pdf" target="_blank">Incident Report </a></li>
+									<li><a href="/sites/intranet/CORPORATE FORMS/Notice_of_Corrective_Action_2010_Revised.doc" target="_blank">Notice of Corrective Action - Revised </a></li>
+									<li><a href="/sites/intranet/CORPORATE FORMS/PERFORMANCE_IMPROVEMENT_PLAN_rev_2010.doc" target="_blank">Performance Improvement Plan (PIP)- REVISED 1-2005 </a></li>
+									<li><a href="/sites/intranet/CORPORATE FORMS/A TEMPLATE - Personnel Requistion 6-2017.doc" target="_blank">Personal Requisition Form </a></li>
+									<li><a href="/sites/intranet/CORPORATE FORMS/2018 Professional Development Program Presentation.ppsx" target="_blank">PDP Presentation 2018 </a></li>
+									<li><a href="/sites/intranet/CORPORATE FORMS/2018 PDP Instructions.pdf" target="_blank">PDP Instructions 2018 </a></li>
+									<li><a href="/sites/intranet/CORPORATE FORMS/Record_of_Employee_Communication_2009.doc" target="_blank">Record of Employee Communication 2009 </a></li>
+									<li><a href="/sites/intranet/CORPORATE FORMS/2012_Record of Employee Complaint_.doc" target="_blank">Record of Employee Complaint </a></li>
+									<li><a href="/sites/intranet/CORPORATE FORMS/4.16 Tuition Reimbursement Application 2016.doc" target="_blank">Tuition Reimbursement Application 16 </a></li>
+									<li><a href="/sites/intranet/CORPORATE FORMS/Vendor Gift Request Form2017.doc" target="_blank">Vendor Gift Request Form </a></li>
+        						</ul>
+        						
+                            </li>
+							<li class="dropdown-submenu"><a href="#" class="dropdown-toggle" data-toggle="dropdown">IT</a>
+                            	<ul class="dropdown-menu">
+									<li><a href="/sites/intranet/CORPORATE FORMS/APEX TOOLS ACCESS REQUEST FORM.DOCX" target="_blank">Appex Tools Access Request Form</a></li>
+									<li><a href="/sites/intranet/CORPORATE FORMS/Clarify WebCSR Application Access Request Form 3-13-13.docx" target="_blank">Clarify/WebCSR Application Access Request Form </a></li> 
+									<li><a href="/sites/intranet/CORPORATE FORMS/Corrective_Preventive_Action_Request_Form.doc" target="_blank">Corrective - Preventive Action request Form </a></li>
+									<li><a href="/sites/intranet/CORPORATE FORMS/DATABASE ACCESS REQUEST FORM.DOCX" target="_blank">Database Access Request Form </a></li>
+									<li><a href="/sites/intranet/CORPORATE FORMS/Deviation From Security Configuration Standards Form 2014.docx" target="_blank">Deviation From Security Configuration Standards Form</a></li>
+									<li><a href="/sites/intranet/CORPORATE FORMS/Deviation_from_Standards_Form_2013.docx" target="_blank">Deviation From Standards Form</a></li>
+									<li><a href="/sites/intranet/CORPORATE FORMS/Firewall Connectivity Requirements Form v3.xls" target="_blank">Firewall Connectivity Requirements Form</a></li>
+									<li><a href="/sites/intranet/CORPORATE FORMS/IP_Request_Form-V3.xlsx" target="_blank">IP Request Form</a></li>
+									<li><a href="/sites/intranet/CORPORATE FORMS/Tracfone_VPN-Form_v2.docx" target="_blank">IPSec Tunnel Configuration</a></li>
+									<li><a href="/sites/intranet/CORPORATE FORMS/Network_Device_Access_Request_Form 2013.docx" target="_blank">Network Device Access Request Form</a></li>
+									<li><a href="/sites/intranet/CORPORATE FORMS/No SQA Required.doc" target="_blank">No SQA Requred</a></li>
+									<li><a href="/sites/intranet/CORPORATE FORMS/Request_Mifi_Device Form.pdf" target="_blank">Request Mifi(Hotspot) Device Form</a></li>
+									<li><a href="/sites/intranet/CORPORATE FORMS/Request_to_Monitor_Form.docx" target="_blank">Request to Monitor Form</a></li>
+									<li><a href="/sites/intranet/CORPORATE FORMS/Service Account Access Request Form - v1.0.docx" target="_blank">Service Account Request Form</a></li>
+									<li><a href="/sites/intranet/CORPORATE FORMS/UNIX ID Access Request Form - v5.0.docx" target="_blank">UNIX ID Access Request Form</a></li>
+									<li><a href="/sites/intranet/CORPORATE FORMS/UNIX ROOT Access Request Form 2014 updated 11 03 2014.docx" target="_blank">UNIX ROOT Access Request Form </a></li>
+									<li><a href="/sites/intranet/CORPORATE FORMS/Windows Domain(s) Administrator Request Form 2013.docx" target="_blank">Windows Domain(s) Administrator Request Form</a></li>
+        						</ul>
+        						
+                            </li>
+
+                            <li class="dropdown-submenu"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Legal</a>
+	                            <ul class="dropdown-menu">
+		                            <li><a href="/sites/intranet/CORPORATE FORMS/CONTRACT ROUTING FORM 03202018.pdf" target="_blank">Contract Routing Form</a></li>
+									
+									<li><a href="/sites/intranet/CORPORATE FORMS/PATENT_ONE_PAGER1.doc" target="_blank">PATENT ONE PAGER1</a></li>
+									<li><a href="/sites/intranet/CORPORATE FORMS/TracFone NDA (Ver. No. 2018-06).zip" target="_blank">TracFone NDA Form</a></li>
+	                            </ul>
+                            </li>
+                             <li class="dropdown-submenu"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Order Management</a>
+	                            <ul class="dropdown-menu">
+		                            <li><a href="/sites/intranet/CORPORATE FORMS/INTERNAL_HANDSET_REQUEST_FORM.xls" target="_blank">Internal Handset Request Form</a></li>
+									<li><a href="/sites/intranet/CORPORATE FORMS/INVENTORY_PRODUCT_REQUEST_ENTITLEMENT_ONLY REVISED 041118.xlsx" target="_blank">Inventory Product Request - Entitlement Only </a></li>
+									<li><a href="/sites/intranet/CORPORATE FORMS/INVENTORY_PRODUCT_REQUEST 09.25.17.xlsx" target="_blank">Inventory Product Request</a></li>
+	                            </ul>
+                            </li>
+							 <li class="dropdown-submenu"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Project Management</a>
+	                            <ul class="dropdown-menu">
+		                            <li><a href="/sites/intranet/CORPORATE FORMS/PROJECT INITIATION REQUEST 08-2017.docx" target="_blank">Project Initiation Request</a></li>
+									<li><a href="/sites/intranet/CORPORATE FORMS/Project Standard Accounting Questionnaire.docm" target="_blank">Project Standard Accounting Questionnaire </a></li>
+									<li><a href="/sites/intranet/CORPORATE FORMS/RESOURCE SCHEDULER FORM.xlsx" target="_blank">Resource Scheduler Form </a></li>
+									<li><a href="/sites/intranet/CORPORATE FORMS/PDD Template.docx" target="_blank">PDD Template</a></li>
+									<li><a href="/sites/intranet/CORPORATE FORMS/Project Closeout Document 08-2017.xlsx" target="_blank">Project Closeout Document </a></li>
+									<li><a href="/sites/intranet/CORPORATE FORMS/Project Impairment Notification.docx" target="_blank">Project Impairment Notification </a></li>
+									<li><a href="/sites/intranet/CORPORATE FORMS/Project Cancellation Notification.docx" target="_blank">Project Cancellation Notification </a></li>
+									<li><a href="/sites/intranet/CORPORATE FORMS/PER REDUCTION FORM.xlsx" target="_blank">PER Reduction Form </a></li>
+									<li><a href="/sites/intranet/CORPORATE FORMS/Project Expenditure Request (PER) Form.xlsx" target="_blank">Project Expenditure Request (PER) Form </a></li>
+									<li><a href="/sites/intranet/CORPORATE FORMS/2-27-18 New Airtime Approval Form v4 (Publish).xlsm" target="_blank">Service Plan Request Form </a></li>
+									<li><a href="/sites/intranet/CORPORATE FORMS/EPO TEMPLATE PIR Scorecard 032018.xls" target="_blank">EPO Template PIR Scorecard</a></li>
+									<li><a href="/sites/intranet/CORPORATE FORMS/HW-SW-SERV POR.xlsx" target="_blank">HW-SW-SERV POR</a></li>
+	                            </ul>
+                            </li>
+                             <li class="dropdown-submenu"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Sales</a>
+	                            <ul class="dropdown-menu">
+		                            <li><a href="/sites/intranet/CORPORATE FORMS/Retailer_Deduction_Requisition_Updated.xlsb" target="_blank">Retailer Deduction Requisition </a></li>
+									<li><a href="/sites/intranet/CORPORATE FORMS/Retailer_Pricing_Terms_Sheet_07192017.xlsx" target="_blank">Retailer Pricing Term Sheet</a></li>
+								</ul>
+                            </li>
+
+ 							<li class="dropdown-submenu"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Travel</a>
+	                            <ul class="dropdown-menu">
+		                            <li><a href="/sites/intranet/CORPORATE FORMS/InternationalTravelForm.doc" target="_blank">International Travel Form</a></li>
+									<li><a href="/sites/intranet/CORPORATE FORMS/TravelAdvanceForm.xls" target="_blank">Travel Advance Form</a></li>
+									<li><a href="/sites/intranet/CORPORATE FORMS/TRAVELJUSTIFICATIONFORM.xls" target="_blank">Travel Justification Form</a></li>
+	                            </ul>
+                            </li>
+ 						<li class="dropdown-submenu dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false">Vendor Staffing</a>
+	                            <ul class="dropdown-menu" id="vendor-staffing">
+		                            <li><a href="/sites/intranet/CORPORATE FORMS/Consultant and Temporary Employee Entrance Form.pdf" target="_blank">Consultant and Temporary Employee Entrance Form</a></li>
+									<li><a href="/sites/intranet/CORPORATE FORMS/Consultant  Temporary Employee Exit Form rev 09 10 2012.pdf" target="_blank">Consultant and Temporary Employee Exit Form</a></li>
+									<li><a href="/sites/intranet/CORPORATE FORMS/ConsultantTemporary_Employee_Computer_Password_Policy.doc" target="_blank">Consultant &amp; Temporary Employee Computer Password Policy </a></li>
+									<li><a href="/sites/intranet/CORPORATE FORMS/Consultant_Temporary_Employee_Extension_revised 12 15 13.doc" target="_blank">Consultant Temporary Employee Extension Form</a></li>
+									<li><a href="/sites/intranet/CORPORATE FORMS/Consulting Requisition Form.xlsx" target="_blank">Consulting Requisition Form</a></li>
+									<li><a href="/sites/intranet/CORPORATE FORMS/Contractor Equipment Connection Request Form v3-2.doc" target="_blank">Contractor Equipment Connection Request Form</a></li>
+	                            </ul>
+                            </li>
+
+
+                            
+                    </ul>
+                    </li>
+                    <li><a class="main-nav-trac-a" href="http://www.americamovil.com/home-page" target="_blank">América Móvil</a></li>
+                    <li><a class="main-nav-trac-a" href="/sites/intranet/Pages/TrustFone.aspx" target="_blank">Trustfone</a></li>
+                                        <li class="dropdown">
+                        <a class="dropdown-toggle main-nav-trac-a" data-toggle="dropdown" href="#">About Tracfone</a>
+                        <ul class="dropdown-content">
+                            <li><a href="/sites/intranet/Pages/About.aspx" target="_blank">About Us</a></li>
+                             <li><a href="/sites/intranet/SiteDocuments/2018 TF_CodeofConduct_Final_HighRes.pdf" target="_blank">CODE OF CONDUCT</a></li>
+                             <li><a href="/sites/intranet/Pages/Employee-Directory.aspx" target="_blank">Employee Directory</a></li>
+                             <li><a href="/sites/intranet/SiteDocuments/Glossary.pdf" target="_blank">Glossary</a></li>
+
+                              
+
+                             
+                             <!--<li><a href="#" target="_self">Trade Shows</a></li>
+                            <li><a href="#" target="_self">Award Ceremony</a></li>-->
+                        </ul>
+
+                    </li>
+
+
+                    <li>
+                    <div class="input-group stylish-input-group" >
+                    <div id="SearchContainer"></div>
+                </div>
+
+                    </li>
+
+                </ul>
+
+            </div><!--/.nav-collapse -->
+
+
+           <!--<div class="container">
+                <div class="row">
+                    <div class=" col-sm-2  search-br pull-right">
+                        <div id="imaginary_container">
+                            <div class="input-group stylish-input-group">
+                                <input type="text" class="form-control" placeholder="Search">
+                                <span class="input-group-addon">
+                                    <button type="submit">
+                                        <span class="glyphicon glyphicon-search"></span>
+                                    </button>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>--> 
+
+
+        </div>
+    </nav>
+
+<script>
+//nav-bar menu close option
+$(".dropdown-menu").mouseleave(function() {
+	$(this).parent().removeClass("open");
+});
+</script>
+</body>
+
+</html>

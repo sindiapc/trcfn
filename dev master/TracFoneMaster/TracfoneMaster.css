@@ -1,0 +1,615 @@
+﻿#SearchContainer 
+{
+	display:none;
+}
+#O365_MainLink_Settings
+{
+	    padding-right: 15px;
+    
+}
+#SearchBox
+ {
+  background-color: #fff !important;
+      width: 227px!important;
+
+ }
+
+ .navbar-nav>li{
+	 text-transform: uppercase;
+ }
+
+
+.text-center{
+margin-top: 20px;
+}
+
+.stylish-input-group .input-group-addon{
+    background: white !important;
+}
+.stylish-input-group .form-control{
+	border-right:0;
+	box-shadow:0 0 0;
+	border-color:#ccc;
+    height: 26px;
+
+    padding: 6px 12px;
+}
+.stylish-input-group button{
+    border:0;
+    background:transparent;
+    height:6px;
+}
+.input-group-addon{
+padding: 0px !important;
+
+}
+
+
+.fullBand{
+  background: #004da1;
+  height: auto;
+  width: 100%;
+ position: relative;
+ top: 1px;
+ z-index: 2;
+}
+
+
+  .tracmenu{
+     background: url('BG_1.jpg') repeat-x ;
+     height: auto;
+     margin: 0 auto;
+     padding: 10px;
+  }
+
+     .navbar{
+       border:none !important;
+         border-radius:0 !important;
+         padding-top: 10px;
+     }
+
+     .navbar-nav li a {
+         font-size:14px;
+         color:#fff;
+     }
+     .navbar-nav li a:visited {
+         color:white;
+     }
+     .navbar-nav li a:focus{
+	
+background-color: #29937d!important
+}
+     .main-nav-trac-a {
+         color: #EFEFEF;
+         text-decoration: none;
+        text-transform: uppercase;
+         font-size: 12px;
+        padding: 15px 10px 0 7px;
+     }
+
+     main-nav-trac li a:active {
+         text-decoration: none;
+         color: #FFF;
+
+     }
+     .nav>li>a:focus, .nav>li>a:hover{
+         text-decoration: none;
+         background: transparent !important;
+         color: #CCC;
+     }
+
+      .navbar ul li {
+       border:none !important;
+         border-radius:0 !important;
+         padding-top: 10px;
+     }
+
+
+
+     .navbar-toggle collapse {
+         background-color: aqua;
+     }
+
+
+.navbar-toggle {
+
+    border: 1px thin green;
+
+}
+.collapse>in {
+
+    color: red;
+    background: yellow;
+}
+
+   .user-header{
+     width: 200px;
+     height: 30px;
+     /* overflow: hidden; */
+    font-size: 12px;
+       padding: 5px ;
+      }
+
+.user-header p {
+        float: right;
+        padding-right: 10px;
+        color: white;
+        margin: 0px 0px 10px;
+    /*text-transform: uppercase;*/
+     }
+
+
+ .user-image{
+    float: right;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    margin-right: 10px;
+    margin-top: -2px;
+    /*border: thin groove #ccc;*/
+
+     }
+
+
+.stylish-input-group .input-group-addon{
+    background: white !important;
+}
+.stylish-input-group .form-control{
+	border-right:0;
+	box-shadow:0 0 0;
+	border-color:#ccc;
+}
+.stylish-input-group button{
+    border:0;
+    background:transparent;
+}
+
+.icon-bar{
+
+    width: 35px;
+    height: 4px;
+    background-color: black;
+    margin: 6px 0;
+}
+
+.nav .open>a{
+    background-color: none;
+}
+.dropdown-menu {
+
+background-color:#29937d;
+    color: white;
+}
+
+
+
+.dropdown-menu li:hover {
+
+    font-size: 14px;
+    color: #CCC;
+
+}
+
+.dropdown-menu li a  {
+
+    font-size: 14px;
+    text-transform: uppercase;
+    color: white;
+}
+.dropdown-menu li a:visited{color:white;}
+
+.dropdown-menu li a:hover {
+
+    color:white;
+    background-color: #2ea182;
+}
+
+  .nav .open>a, .nav .open>a:focus, .nav .open>a:hover
+    {
+        background-color:#2ea182 !important ;
+        color: white;
+    }
+        
+.nav>li>a {
+        padding: 10px 8px;
+}
+    
+    
+.glyphicon {
+	
+    /*top: -4px !important; */
+}
+
+/*.dropdown-menu li a:hover {
+
+    font-size: 12px;
+}*/
+.navbar-brand img{
+    
+    padding: 6px 0px 0px 0px;
+}
+
+@media screen and (min-width: 381px){
+.search-br{
+        margin-left: 81.333333%;
+    }
+    
+    .stylish-input-group {
+   /* width: 300px;*/
+    padding: 13px 0px 0px 10px;
+}
+    .navbar-brand {
+            padding: 5px 15px !important;
+
+    }
+}
+
+
+@media screen and (max-width: 1200px){
+
+
+    .navbar-brand {
+    float: left;
+    /* height: 50px; */
+    /* padding: 15px 15px; */
+    /* font-size: 18px; */
+    /* line-height: 20px; */
+    }
+    .main-nav-trac{
+/*        width: 780px;*/
+         text-decoration: none;
+        text-transform: uppercase;
+         font-size: 11px;
+        padding: 20px 2px 0 2px;
+    }
+     .navbar ul li {
+       border:none !important;
+         border-radius:0 !important;
+         padding-top: 1px;
+     }
+    .nav>li>a{
+
+     position: relative;
+/*    display: block;*/
+    padding: 2px 5px;
+
+    }
+    .main-nav-trac-a{
+           font-size: 11px;
+
+    }
+    .search-br{
+    }
+
+
+}
+
+@media screen and (max-width: 994px){
+
+
+    .search-br{
+        width:100%;
+    }
+}
+
+
+@media screen and (max-width: 768px){
+   .tracmenu{
+     background: url('BG_1.jpg') repeat ;
+     height: auto;
+     margin: 0 auto;
+     padding: 10px;
+  }
+
+    .user-header{
+        float: right;
+        padding-top: 0px;
+    }
+
+}
+
+@media screen and (max-width: 460px){
+   .tracmenu{
+     background: url('BG_1.jpg') repeat-x ;
+     height: auto;
+     margin: 0 auto;
+     padding: 10px;
+  }
+    .navbar-nav{
+        margin: 1.5px -15px;
+    }
+
+}
+.container-nav{
+    width:1130px;
+}
+.login-link{
+    padding-top:0px !important;
+}
+.dropdown-submenu {
+    position: relative;
+}
+
+.dropdown-submenu>.dropdown-menu {
+    top: 0;
+    left: 100%;
+    margin-top: -6px;
+    margin-left: -1px;
+    -webkit-border-radius: 0 6px 6px 6px;
+    -moz-border-radius: 0 6px 6px;
+    border-radius: 0 6px 6px 6px;
+   
+}
+
+.dropdown-submenu:hover>.dropdown-menu {
+   /* display: block;*/
+}
+
+.dropdown-submenu>a:after {
+    display: block;
+    content: " ";
+    float: right;
+    width: 0;
+    height: 0;
+    border-color: transparent;
+    /*border-style: solid;*/
+    border-width: 5px 0 5px 5px;
+    border-left-color: #ccc;
+    margin-top: 5px;
+    margin-right: -10px;
+}
+
+.dropdown-submenu:hover>a:after {
+        border-left-color: #fff; 
+            border-style: solid;
+         
+            
+}
+
+.dropdown-submenu.pull-left {
+    float: none;
+}
+
+.dropdown-submenu.pull-left>.dropdown-menu {
+    left: -100%;
+    margin-left: 10px;
+    -webkit-border-radius: 6px 0 6px 6px;
+    -moz-border-radius: 6px 0 6px 6px;
+    border-radius: 6px 0 6px 6px;
+}
+.navbar-nav>li>.dropdown-content {
+    margin-top: 0;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+}
+.dropdown-content {
+    /*
+    display: none;
+    position: absolute;
+    background-color: #29937d;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    */
+    
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 1000;
+    display: none;
+    float: left;
+    min-width: 160px;
+    padding: 5px 0;
+    margin: 2px 0 0;
+    font-size: 14px;
+    text-align: left;
+    list-style: none;
+        background-color: #29937d;
+    color: white;
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box;
+    border: 1px solid #ccc;
+    border: 1px solid rgba(0,0,0,.15);
+    border-radius: 4px;
+    -webkit-box-shadow: 0 6px 12px rgba(0,0,0,.175);
+    box-shadow: 0 6px 12px rgba(0,0,0,.175);
+    text-decoration: none!important;
+
+}
+
+.dropdown-content>li>a {
+    display: block;
+    padding: 3px 20px;
+    clear: both;
+    font-weight: 400;
+    line-height: 1.42857143;
+    color: #fff;
+    white-space: nowrap;
+    text-decoration:none;
+}
+.dropdown-content a:hover {background-color: #2ea182;
+text-decoration:none;
+}
+
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+.o365cs-base.o365cs-topnavBGColor-2,.o365cs-base .o365cs-topnavLinkBackground-2
+{
+	background-color:#004da1!important;
+	
+}
+#O365_NavHeader > div.o365cs-nav-leftAlign ,#menu > div ,#O365_TopMenu > div > span > div:nth-child(6),#siteIcon ,#titleAreaRow > div.ms-breadcrumb-box.ms-tableCell.ms-verticalAlignTop > div,#O365_TopMenu > div > span > div:nth-child(5), #RibbonContainer-TabRowRight,#searchInputBox
+{
+	display:none!important;
+}
+#menu > nav > div
+{
+	margin-left:8%!important;
+}
+.no-padding
+{
+	padding-left:0px!important;
+	padding-right:0px!important;
+}
+.fullBand
+{
+	width:100%!important;
+}
+.dropdown-menu {
+    background-color: #29937d!important;
+    color: white;
+}
+.dropdown-menu li a:hover {
+    color: white;
+    background-color: #2ea182!important;
+}
+.dropdown-menu>li>a
+{
+	color: white!important;
+}
+
+#menu > div
+{
+	height:30px!important;
+}
+.o365cs-me-tile-nophoto ,.o365cs-nav-header16 ,.o365cs-nav-rightAlign ,.o365cs-nav-button
+{
+border-left:0px!important;
+
+
+}
+.o365cs-nav-header16 ,.o365cs-nav-button ,#suiteBarTop ,.o365cs-me-tile-nophoto-username-container
+{
+	    height: 30px!important;
+}
+.o365cs-me-tile-nophoto-username
+{
+	    height: 30px!important;
+
+    font-size: 14px!important;
+
+}
+#login
+{
+	position: absolute;
+    top: 0px;
+    right: 9px;
+    font-size: 14px!important;
+}
+#O365_TopMenu > div > span
+
+{
+	    padding-right: 163px;
+}
+#searchImg
+{
+	background-color: white!important;
+}
+/* .ms-srch-sb > .ms-srch-sb-searchLink*/
+/* #ctl00_PlaceHolderSearchArea_SmallSearchInputBox1_csr_SearchLink */
+#SearchContainer >div > div > a
+{
+	    margin-left: 0px;
+    margin-top: 2px;
+    height: 18px;
+    width: 20px;
+}
+.ms-srch-sb-navLink, .ms-srch-sb-searchLink ,.ms-srch-sb-border
+
+{
+	
+}
+.h1, .h2, .h3, h1, h2, h3
+{
+	    margin-top: 0!important;
+}
+#menu > nav > div > div.navbar-header > a
+{
+	 margin-right: -15px!important;
+
+}
+#menu > nav > div > div.navbar-header
+{
+	 margin-top: 12px!important;
+
+}
+#navbar
+{
+	margin-right: -15px!important;
+
+}
+#menu > nav > div > div.navbar-header
+{
+	padding-left: 3px!important;
+}
+#navbar > ul
+{
+	    margin-left: 100px!important;
+
+}
+.ms-core-pageTitle{
+    margin-left:195px;
+}
+.dropdown-submenu>.dropdown-menu
+{
+	max-height:350px;
+	overflow:auto;
+}
+
+/* for removing the extra padding around close icons on dialog windows */
+.ms-dlgCloseBtn>span{
+    padding:0px !important;
+}
+/* for fixing the issue with page height due to master page menu*/
+#menu{
+    min-height: 90px;
+}
+/* for hiding menu on dialog windows*/
+.ms-dialog #menu{
+    display: none;
+}
+/* for fixing bootstrap overrides*/
+h1, h2, h3, h4, h5, h6, .ms-h1, .ms-h2, .ms-h3, .ms-h4, .ms-h5, .ms-h6 {
+    margin: auto;
+    font-weight: normal;
+}
+h2, h3, .ms-h2, .ms-h3, .ms-headerFont {
+    font-family: "Segoe UI Semilight","Segoe UI","Segoe",Tahoma,Helvetica,Arial,sans-serif !important;
+    color: #262626;
+    font-weight: 300 !important;
+}
+h3, .ms-h3 {
+    font-size: 1.15em !important;
+}
+h1, .ms-h1 {
+    font-family: "Segoe UI Light","Segoe UI","Segoe",Tahoma,Helvetica,Arial,sans-serif;
+    font-size: 2.3em;
+    color: #777;
+    font-weight: 200 !important;
+}
+.ms-linksection-title {
+    color: #444 !important;
+}
+.ms-core-pageTitle {
+    font-size: 2.77em;
+    white-space: nowrap;
+}
+.ms-core-pageTitle, .ms-core-pageTitle a {
+    font-family: "Segoe UI Light","Segoe UI","Segoe",Tahoma,Helvetica,Arial,sans-serif;
+    color: #262626;
+}
+body, .ms-core-defaultFont, #pageStatusBar, .ms-status-msg, .js-callout-body {
+    font-family: "Segoe UI","Segoe",Tahoma,Helvetica,Arial,sans-serif !important;
+    font-size: 13px !important;
+}
+
+/* to fix the webpart title padding,margin on home page */
+.js-webpart-titleCell,.ms-webpart-chrome-title,.ms-webpart-titleText.ms-webpart-titleText{
+    padding:0px;
+    margin:0px;
+}
+.ms-webpart-titleText.ms-webpart-titleText{
+    padding:5px;
+}
