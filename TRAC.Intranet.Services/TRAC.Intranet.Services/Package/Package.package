@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" dslVersion="1.0.0.0" Id="2a86a406-f090-43a5-802c-5f4c38ae67d0" solutionId="2a86a406-f090-43a5-802c-5f4c38ae67d0" resetWebServer="false" sharePointProductVersion="16.0" name="TRAC.Intranet.Services" xmlns="http://schemas.microsoft.com/VisualStudio/2008/SharePointTools/PackageModel">
+  <assemblies>
+    <customAssembly location="Newtonsoft.Json.dll" deploymentTarget="GlobalAssemblyCache" sourcePath="..\..\IntranetSpConsole\IntranetSpConsole\bin\Newtonsoft.Json.dll">
+      <safeControls>
+        <safeControl assemblyName="Newtonsoft.Json, version=11.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed" namespaceName="Newtonsoft.Json" typeName="*" isSafeAgainstScript="true" />
+      </safeControls>
+    </customAssembly>
+  </assemblies>
+  <features>
+    <featureReference itemId="76059b9f-8b46-456d-be9d-e7530f781eb5" />
+  </features>
+  <projectItems>
+    <projectItemReference itemId="783111a6-49ff-4d75-8dd8-b6ff0cb6c642" />
+    <projectItemReference itemId="a16b2345-e1cf-4617-8978-3c1bd5b9af5c" />
+  </projectItems>
+</package>

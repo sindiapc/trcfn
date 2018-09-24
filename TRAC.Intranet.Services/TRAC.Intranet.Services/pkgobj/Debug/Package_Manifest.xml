@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Solution xmlns="http://schemas.microsoft.com/sharepoint/" SolutionId="2a86a406-f090-43a5-802c-5f4c38ae67d0" SharePointProductVersion="16.0">
+  <Assemblies>
+    <Assembly Location="Newtonsoft.Json.dll" DeploymentTarget="GlobalAssemblyCache">
+      <SafeControls>
+        <SafeControl Assembly="Newtonsoft.Json, version=11.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed" Namespace="Newtonsoft.Json" TypeName="*" SafeAgainstScript="True" />
+      </SafeControls>
+    </Assembly>
+    <Assembly Location="TRAC.Intranet.Services.dll" DeploymentTarget="GlobalAssemblyCache" />
+  </Assemblies>
+  <RootFiles>
+    <RootFile Location="ISAPI\ReportFindings.svc" />
+  </RootFiles>
+  <FeatureManifests>
+    <FeatureManifest Location="TRAC.Intranet.Services_ReportFindingsFeature\Feature.xml" />
+  </FeatureManifests>
+</Solution>

@@ -1,0 +1,139 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{E2C18F3E-9750-493B-9B94-9C307D358694}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>TRAC.Intranet.Services</RootNamespace>
+    <AssemblyName>TRAC.Intranet.Services</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <TargetOfficeVersion>16.0</TargetOfficeVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{C1CDDADD-2546-481F-9697-4EA41081F2FC};{14822709-B5A1-4724-98CA-57A101D1B079};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <MinimumVisualStudioVersion>14.0</MinimumVisualStudioVersion>
+    <MinimumOfficeToolsVersion>14.5</MinimumOfficeToolsVersion>
+    <SandboxedSolution>False</SandboxedSolution>
+    <TokenReplacementFileExtensions>svc</TokenReplacementFileExtensions>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <CodeAnalysisRuleSet />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <CodeAnalysisRuleSet />
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>true</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>key.snk</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Newtonsoft.Json, Version=6.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\IntranetSpConsole\packages\Newtonsoft.Json.11.0.2\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.DirectoryServices" />
+    <Reference Include="System.DirectoryServices.AccountManagement" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Runtime.Caching" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.ServiceModel.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="Microsoft.SharePoint" />
+    <Reference Include="Microsoft.SharePoint.Client.ServerRuntime" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CacheLayer.cs" />
+    <Compile Include="ISAPI\IReportFindings.cs" />
+    <Compile Include="ISAPI\ReportFindings.svc.cs">
+      <DependentUpon>ReportFindings.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Model\Activations.cs" />
+    <Compile Include="Model\Airtime.cs" />
+    <Compile Include="Model\BrandRevenue.cs" />
+    <Compile Include="Model\BYOP.cs" />
+    <Compile Include="Model\CaseVolume.cs" />
+    <Compile Include="Model\customfield_10715.cs" />
+    <Compile Include="Model\Employee.cs" />
+    <Compile Include="Model\HomeCharts.cs" />
+    <Compile Include="Model\JiraFields.cs" />
+    <Compile Include="Model\JiraIssue.cs" />
+    <Compile Include="Model\JiraOtherProject.cs" />
+    <Compile Include="Model\JiraProject.cs" />
+    <Compile Include="Model\JiraRoot.cs" />
+    <Compile Include="Model\MTDRevenue.cs" />
+    <Compile Include="Model\NetGain.cs" />
+    <Compile Include="Model\NPS.cs" />
+    <Compile Include="Model\Operations.cs" />
+    <Compile Include="Model\OtherInitiatives.cs" />
+    <Compile Include="Model\PhoneType.cs" />
+    <Compile Include="Model\President.cs" />
+    <Compile Include="Model\PresidentsData.cs" />
+    <Compile Include="Model\Priority.cs" />
+    <Compile Include="Model\Project.cs" />
+    <Compile Include="Model\RetailActivation.cs" />
+    <Compile Include="Model\TransferRate.cs" />
+    <Compile Include="Model\WFReport.cs" />
+    <Compile Include="Model\Subscriber.cs" />
+    <Compile Include="Model\YTDRevenue.cs" />
+    <Compile Include="Model\YTDRevenueChart.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Features\ReportFindingsFeature\ReportFindingsFeature.feature">
+      <FeatureId>{76059b9f-8b46-456d-be9d-e7530f781eb5}</FeatureId>
+    </None>
+    <None Include="ISAPI\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{a16b2345-e1cf-4617-8978-3c1bd5b9af5c}</SharePointProjectItemId>
+    </None>
+    <None Include="key.snk" />
+    <None Include="Layouts\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{783111a6-49ff-4d75-8dd8-b6ff0cb6c642}</SharePointProjectItemId>
+    </None>
+    <None Include="Package\Package.package">
+      <PackageId>{2a86a406-f090-43a5-802c-5f4c38ae67d0}</PackageId>
+    </None>
+    <None Include="Package\Package.Template.xml">
+      <DependentUpon>Package.package</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Layouts\TRAC.Intranet.Services\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Features\ReportFindingsFeature\ReportFindingsFeature.Template.xml">
+      <DependentUpon>ReportFindingsFeature.feature</DependentUpon>
+    </Content>
+    <Content Include="ISAPI\ReportFindings.svc" />
+    <Content Include="Steps.txt" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(VSToolsPath)\SharePointTools\Microsoft.VisualStudio.SharePoint.targets" Condition="'$(VSToolsPath)' != ''" />
+</Project>

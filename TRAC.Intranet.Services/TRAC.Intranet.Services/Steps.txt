@@ -1,0 +1,39 @@
+﻿Update-SPSolution –Identity TRAC.Intranet.Services.wsp –LiteralPath "D:\sindia\PublishedSolutions\TRAC.Intranet.Services.wsp" –GACDeployment -Confirm:$false 
+
+
+Disable-SPFeature -Url "http://dpvmspdev:10001/sites/intranet" -Identity D54D616C-8DA9-4FF1-9EE5-4525FC080967 -Confirm:$false 
+
+Uninstall-SPSolution –Identity TRAC.Intranet.Services.wsp -Confirm:$false -WebApplication http://dpvmspdev:10001
+
+start-sleep -s 3
+
+$sln = get-spsolution -identity TRAC.Intranet.Services.wsp
+$sln.JobExists
+
+while($sln.JobExists) {
+echo " > Uninstall in progress..." 
+start-sleep -s 10
+}
+
+Remove-SPSolution -Identity TRAC.Intranet.Services.wsp  -Confirm:$false 
+
+
+Add-SPSolution "D:\sindia\PublishedSolutions\TRAC.Intranet.Services.wsp"
+
+Install-SPSolution -GACDeployment -FullTrustBinDeployment -Identity TRAC.Intranet.Services.wsp -CompatibilityLevel All  -WebApplication http://dpvmspdev:10001
+
+start-sleep -s 30
+
+$sln = get-spsolution -identity TRAC.Intranet.Services.wsp
+$sln.JobExists
+while($sln.JobExists) {
+echo " > Install in progress..." 
+start-sleep -s 10
+}
+
+Enable-SPFeature -Url "http://dpvmspdev:10001/sites/intranet" -Identity D54D616C-8DA9-4FF1-9EE5-4525FC080967
+
+
+
+
+

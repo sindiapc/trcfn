@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <SharePointSiteUrl>http://dpvmspdev:10001/sites/intranet/</SharePointSiteUrl>
+    <PublishToFileSystemTargetLocation>D:\sindia\PublishedSolutions</PublishToFileSystemTargetLocation>
+    <ProjectView>ShowAllFiles</ProjectView>
+  </PropertyGroup>
+</Project>

@@ -1,0 +1,1 @@
+bin\Debug\TRAC.Intranet.Services.wsp
